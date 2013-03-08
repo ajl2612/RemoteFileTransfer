@@ -1,0 +1,188 @@
+/*
+ * GUI.java
+ *
+ * Version:
+ * $Id$
+ *
+ * Revisions:
+ * $Log$
+ */
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.Component.*;
+import java.awt.event.*;
+import java.util.*;
+
+
+/**
+ * GUI_COMMENT
+ *
+ * @author ajl2612: Andrew Lyne III
+ */
+
+public class GUI {
+
+
+
+   /**
+    * makes a new student file veiwer GUI. the program takes in no parameters
+    *
+    */
+
+   public GUI() {
+   
+       // Make the frame that contains all attrubutes of the GUI and sets the 
+       // layout.
+       JFrame frame  = new JFrame( "Studenty File Viewer" );
+       frame.setLayout( new BorderLayout() );
+       frame.setLocationRelativeTo( null );
+
+       // make all the data feilds to be used later
+       JTextArea text = new JTextArea( 25, 60 );
+
+       JMenuBar menuBar = new JMenuBar();
+
+       JMenu file = new JMenu( "File" );
+       JMenuItem fileItem1 = new JMenuItem( "Open File" );
+       JMenuItem fileItem2 = new JMenuItem( "Save Changes" );
+       JMenuItem fileItem3 = new JMenuItem( "Close File" );
+       JMenuItem fileItem4 = new JMenuItem( "Add File To Database" );
+       JMenuItem fileItem5 = new JMenuItem( "Remove File From Database" );
+       JMenuItem fileItem6 = new JMenuItem( "Quit" );
+
+       JMenu search = new JMenu( "Search" );
+       JMenuItem searchItem1 = new JMenuItem( "By File Name" );
+       JMenuItem searchItem2 = new JMenuItem( "By Topic" );
+       JMenuItem searchItem3 = new JMenuItem( "List All Files" );
+
+       JMenu favs = new JMenu( "Favorites" );
+       JMenuItem favsItem1 = new JMenuItem( "Add Favorite" );
+       JMenuItem favsItem2 = new JMenuItem( "Remove Favorite" );
+
+
+       // make the open action listener
+       ActionListener fileListener = new ActionListener(){
+
+               public void actionPerformed( ActionEvent e ){
+                   
+                   char command = e.getActionCommand.charAt( 0 );
+                   
+                   switch ( command ) {
+                   
+                   case 'o':
+                       /*  JFrame openFrame = new JFrame( "OPEN" );
+                       JButton b1 = new JButton( "Open" );
+                       JTextField tf1 = new JTextField( "Enter File Name", 20 );
+                       boolean b1Clicked = false;
+                       
+                       ActionListener b1Listener = new ActionListener(){
+                               
+                               openFrame.disopse();
+                               
+                           };
+                       
+                       openFrame.setLocationRelativeTo( null );
+                       openFrame.setLayout( new GridLayout( 0, 1 ) );
+                       openFrame.add( b1 );
+                       openFrame.add( tf1 );
+                       
+                       openFrame.pack();
+                       openFrame.setVisible( true );
+                       break;
+                       */
+
+                   case 's':
+                       System.out.println( "save" );
+                       break;
+
+                   case 'c':
+                       System.out.println( "close" );
+                       break;
+
+                   case 'a':
+                       System.out.println( "add file " );
+                       break;
+
+                   case 'r':
+                       System.out.println( "remove file" );
+                       break;
+
+                   case 'q':
+                       System.out.println( "quit" );
+                       frame.dispose();
+                       break;
+                   }
+               }
+
+           };
+
+
+
+
+
+       // make the text area and add it to the center of the frame
+       frame.add( text, BorderLayout.CENTER );       
+       
+       // Make the file tab
+       menuBar.add( file );
+       
+       file.add( fileItem1 );
+       fileItem1.addActionCommand( "o" );
+       fileItem1.addActionListener( openListener );
+       file.add( fileItem2 );
+       fileItem2.addActionCommand( "s" );
+       file.add( fileItem3 );
+       fileItem3.addActionCommand( "c" );
+       file.add( fileItem4 );
+       fileItem4.addActionCommand( "a" );
+       file.add( fileItem5 );
+       fileItem5.addActionCommand( "r" );
+       file.add( fileItem6 );
+       fileItem6.addActionCommand( "q" ); 
+
+       // Make the search tab
+       menuBar.add( search );
+   
+       search.add( searchItem1 );
+       search.add( searchItem2 );
+       search.add( searchItem3 );
+
+       // Make the Favorites tab
+       menuBar.add( favs );
+
+       favs.add( favsItem1 );
+       favs.add( favsItem2 );
+
+       //////////////////////////////////////////////////////////////
+       //                  TO BE IMPLEMENTED                       //
+       //////////////////////////////////////////////////////////////
+       // For each element in the favorites array in the database  // 
+       // class, add a tab here.                                   //
+       //////////////////////////////////////////////////////////////
+
+       
+       frame.add( menuBar, BorderLayout.NORTH );
+
+
+       // set the outer frame to visible  and program system exit command
+       frame.pack();
+       frame.setVisible( true );
+       frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+   }
+
+
+   /**
+    * main method -- DELETE METHOD IF NOT NEEDED
+    *
+    * @param    args      command line arguments
+    */
+
+   public static void main( String args[] ) {
+
+       GUI test = new GUI();
+       SourceCode database = new SourceCode();
+
+   }
+
+} // GUI

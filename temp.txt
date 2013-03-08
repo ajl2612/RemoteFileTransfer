@@ -1,0 +1,30 @@
+ /**
+     * searches through the file database and reutunrs an arraylist of filenames
+     * of all the files that match the user input
+     *
+     * @param   char c       character representing how to search. valid inputs
+     *                       are 'f' representing filename search and 't' 
+     *                       representing topic search
+     * @param   String array   array of words to search the file for
+     * @return  String array   array of filenames that match the user's search
+     */
+    public ArrayList<String> search( char c, ArrayList<String> keys ){
+
+        switch( c )
+            case f:
+            /* Make data fields to be used
+            ArrayList<String> results = new ArrayList<String>();
+        Iterator itr1 = keys.iterator();
+        String keyCurrent = "";
+
+        // check the database
+        while( itr1.hasNext() ){
+            keyCurrent = (String)itr1.next();
+        }
+
+            */
+            case t:
+            case default
+                return results;
+
+    }

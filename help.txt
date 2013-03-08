@@ -1,0 +1,99 @@
+This program is designed to add files to a database to provide quick and easy 
+reference to important topics. This file provided an explanation to the 
+functions of this program and how to use the program efficiently.
+
+File
+
+Open File - Selecting this option opens a pop up window containing a text 
+region and a single button labeled search. Type the name of the file you wish 
+to open and press the "search" button. Note that the file must be in the 
+database in order to open it.
+
+Save Changes - Opens a pop up window with with the label "Are you sure?" and 
+three buttons "yes", "no" and "cancel". Pressing "yes" will write the text 
+stored in the text region over the file from which that text was generated. 
+Pressing "no" or "cancel" will exit the prompt without saving changes. The 
+text will remain as is.
+
+Close File - First prompts the user if they wish to save the contents of the 
+text area. If they select "Yes", the data in the text field will overwrite the 
+file from which the text was generated. The text field will then be cleared. 
+Selecting "no" will clear the text field without saving the file. Selecting 
+"cancel" will exit the command without saving the contents of the frame or 
+clearing the field
+
+Add File To Database - First opens a pop up file chooser, If the user presses 
+the "cancel" button the command exits. If the user selects an invalid file or 
+a file that is already in the database, an appropriate message is displayed in 
+a pop up window and the command exits. If valid file is selected a second pop
+up window with three text regions and a button labeled "add". Insert a list of 
+key topics covered in the file separated by spaces, the quarter the program was
+created in and the class the program was created for into the appropriate text 
+fields.  Pressing "add" will then add the file to the database. If the user 
+enters nothing into a text field or leaves the text "Enter X", that part of the
+file name will be defaulted to an empty string.
+
+Remove File From Database - Opens a pop up window with a text field and a 
+button labeled "remove". Type the file name of the file you wish to remove 
+from the database and press the "remove" button. If the file does not exist in 
+the database an error message is displayed in a pop up window. If the file can 
+be located, it is removed from the database and a confirmation pop up window is
+displayed with a confirmation message. 
+
+Quit - First prompts the user if they wish to save the changes made to the 
+current document. After the user makes their choice, the program exits.
+
+Search
+
+By File Name - A pop up box is displayed containing a text field and a button 
+labeled "search". After the user presses "search", the contents of the text 
+field  are compared to every file name in the database. Files names which 
+contain the data in the text field are displayed in a second pop up window in 
+alphabetical order.
+
+By Topic - the same search as above is implemented, instead comparing the data 
+in the text feid to the list of keywords for each file in alphabetical order.
+
+By Class Name - the same search as above is implemented, instead comparing the 
+data in the text feid to the name of the class for each file in alphabetical 
+order.
+
+By Quarter - the same search as above is implemented, instead comparing the 
+data in the text feids to the quarter each file was created in alphabetical 
+order.
+
+List All Files - Lists the names of all files in a pop up text field in 
+alphabetical order.
+
+Favorites
+
+Add Favorite - Displays a pop up window containing a text field and a button 
+labeled "add". After the user presses "add" the contents of the text field will
+be compared to every file name in the directory. Note that unless the name in 
+the field exactly matches the file name it will not be added to the directory. 
+A pop up window will appear confirming or denying whether the file was added to
+the database.
+
+Remove Favorite - Displays a pop p window containing a text field and a button 
+labeled "remove". After the user selects "remove", the contents of the text 
+field are compared to the files already stored as favorites. If a matching file
+is found, it is removed form the favorites list. Note that the text in the 
+field must match the file name exactly or else the file will not be removed. A 
+pop up window will appear confirming or denying the removal of the file from 
+the list.
+
+Open Favorite - First prompts the user if they wish to save. If "yes" or "no" 
+is selected the file is either saved or not saved and the operation continues. 
+Selecting "Cancel" halts the operation leaving the text field unaltered. Next a
+pop up window opens containing a combo box and a button labeled "open". The 
+combo box contains the file names of all the files currently listed as 
+favorites. After the open button is pressed, the file selected in the combo box
+is opened.
+
+Info
+
+Help - Displays this text is a pop up window so the user can learn how to use 
+this program.
+
+About the Author - Displays some information about me, the writer, in  pop p
+window.   

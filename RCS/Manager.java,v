@@ -1,0 +1,63 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2010.02.18.03.55.09;	author ajl2612;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@/*
+ * Manager.java
+ *
+ * Version:
+ * $Id$
+ *
+ * Revisions:
+ * $Log$
+ */
+
+/**
+ * Manager_COMMENT
+ *
+ * @@author ajl2612: AUTHOR_FULL_NAME_HERE
+ */
+
+public class Manager {
+
+   /**
+    * constructor -- DELETE METHOD IF NOT NEEDED
+    * @@param    junk      ctor parameter
+    */
+
+   public Manager( int junk ) {
+   }
+
+
+   /**
+    * main method -- DELETE METHOD IF NOT NEEDED
+    *
+    * @@param    args      command line arguments
+    */
+
+   public static void main( String args[] ) {
+
+       GUI program = new GUI();
+
+   }
+
+} // Manager
+@

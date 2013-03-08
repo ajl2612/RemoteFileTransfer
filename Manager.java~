@@ -1,0 +1,38 @@
+/*
+ * Manager.java
+ *
+ * Version:
+ * $Id$
+ *
+ * Revisions:
+ * $Log$
+ */
+
+/**
+ * Manager_COMMENT
+ *
+ * @author ajl2612: AUTHOR_FULL_NAME_HERE
+ */
+
+public class Manager {
+
+   /**
+    * constructor -- DELETE METHOD IF NOT NEEDED
+    * @param    junk      ctor parameter
+    */
+
+   public Manager( int junk ) {
+   }
+
+
+   /**
+    * main method -- DELETE METHOD IF NOT NEEDED
+    *
+    * @param    args      command line arguments
+    */
+
+   public static void main( String args[] ) {
+
+   }
+
+} // Manager
